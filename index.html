@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chroma: Demo</title>
+		
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" type="text/css" href="game.css">
+	 
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="colors.js"></script>
+		<script type="text/javascript" src="controls.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+		<script type="text/javascript" src="levels.js"></script>
+		<script type="text/javascript" src="player.js"></script>
+		<script type="text/javascript" src="stopwatch.js"></script>
+	</head>
+	<body>
+		<p id="level-title"></p>
+		<p id="stopwatch"></p>
+		<div id="player"></div>
+		
+		<div class="platform block" style="bottom:0; left:0; width:100%;"></div><!--Floor-->
+		
+		<div class="level" id="Back to Basics">
+			<div class="goal" style="bottom:0; right:100;"></div>
+			<p style="top:300; left:200;"> <span class="controls">Left arrow</span> or <span class="controls">A</span> to move left<br> <span class="controls">Right arrow</span> or <span class="controls">D</span> to move right </p>
+			<p style="bottom:100; right:150;">Go for gold!</p>
+		</div>
+		
+		<div class="level" id="Take Flight">
+			<div class="goal" style="bottom:100; right:100;"></div>
+			<p style="top:300; left:200;"><span class="controls">Up arrow</span> or <span class="controls">W</span> to jump</p>
+		</div>
+		
+		<div class="level" id="Stairway to Heaven">
+			<div class="platform" style="top:500; left:100;"></div>
+			<div class="platform" style="top:400; left:350;"></div>
+			<div class="platform" style="top:300; left:600;"></div>
+			<div class="platform" style="top:200; left:850;"></div>
+			<div class="goal" style="top:100; left:1100;"></div>
+		</div>
+		
+		<div class="level" id="Danger, Will Robinson!">
+			<div class="danger" style="left:50%; bottom:0;"></div>
+			<div class="goal" style="bottom:100; right:100;"></div>
+			<p style="left:50%; bottom:100;">Red is bad</p>
+		</div>
+		
+		<div class="level" id="Pole Vault">
+			<div class="danger" style="left:50%; bottom:20px; width:20px; height:120px;"></div>
+			<div class="goal" style="bottom:100; right:100;"></div>
+		</div>
+		
+		<div class="level" id="No Spacing Out">
+			<div class="platform" style="top:500; left:100;"></div>
+			<div class="platform" style="top:400; left:350;"></div>
+			<div class="platform" style="top:300; left:600;"></div>
+			<div class="platform" style="top:200; left:850;"></div>
+			<div class="platform inverted" style="top:170; left:150;"></div>
+			<div class="platform inverted" style="top:270; left:300;"></div>
+			<div class="danger" style="top:100; left:1100;"></div>
+			<div class="goal" style="top:70; left:0;"></div>
+			<p style="top:50px; left:250px;"><span class="controls">Space</span> to toggle colors</p>
+		</div>
+		
+		<div class="level" id="Elevator to Heaven">
+			<div class="platform inverted" style="left:100px; bottom:85px;"></div>
+			<div class="platform" style="left:100px; bottom:170px;"></div>
+			<div class="platform inverted" style="left:100px; bottom:255px;"></div>
+			<div class="platform" style="left:100px; bottom:340px;"></div>
+			<div class="platform inverted" style="left:100px; bottom:425px;"></div>
+			<div class="goal" style="left:100px; bottom:600px;"></div>
+		</div>
+		
+		<div class="level" id="Life in the Fast Lane">
+			<div class="slower" style="left:600px; bottom:0px; width:600px;"></div>
+			<p style="bottom:50px; left:600px;">Blue slows you down</p>
+			<div class="speeder" style="left:100px; right:200px; width:auto; bottom:150px;"></div>
+			<p style="bottom:200px; right:250px;">Orange speeds you up</p>
+			<div class="goal" style="left:80px; width:20px; bottom:170px; height:100px;"></div>
+		</div>
+		
+		<div class="level">
+			<p style="bottom:50%; left:0; right:0; text-align:center;"> <span style="font-size:300%;">Congratulations!</span><br> <span style="font-size:250%;">You completed this demo!</span><br> <span style="font-size:150%;">Stay tuned for <a href="/projects/Chroma">the full game</a>, coming soon!</span> </p>
+		</div>	
+	</body>
+</html>

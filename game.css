@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+html{
+	background-color: white;
+	overflow: hidden;
+}
+.level{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+p{
+	position: absolute;
+	font-family: "Open Sans";
+}
+.controls{
+	text-decoration: underline;
+}
+#player{
+	position: absolute;
+	top: 75%;
+	left: 500;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	z-index: 1;
+}
+.level > div, .block{
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 20px;
+}
+#level-title{
+	left: 5px;
+	top: 0px;
+	font-size: 125%;
+}
+#stopwatch{
+	right: 5px;
+	top: 0px;
+	font-size: 115%;
+}
